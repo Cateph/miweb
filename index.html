@@ -4,8 +4,55 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Order Now - App</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	
+	<header>
+		<div class="container">
+			<div class="col-auto">
+				<h1>Mi orden</h1>
+			</div>
+
+			<div class="col-auto">
+				<div class="avatar-container" data-bs-target="#profileOptions" data-bs-toggle="modal" >
+					<img src="img/avatar.jpg" alt="">
+					<i class="fas fa-cogs"></i>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+			<div class="modal fade" id="profileOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title">Opciones</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+						<div class="modal-body">
+				        <ul class="profile-options-list">
+				        	<li>
+				        		<a href="#"><i class="fas fa-user"></i> Mi perfil</a>
+				        	</li>
+				        	<li>
+				        		<a href="#"><i class="fas fa-map-marker-alt"></i> Mis direcciones</a>
+				        	</li>
+				        	<li>
+				        		<a href="#"><i class="fas fa-credit-card"></i> Mis tarjetas</a>
+				        	</li>
+				        	<li>
+				        		<a href="#" class="text-danger"><i class="fas fa-times-circle"></i> Cerrar sesión</a>
+				        	</li>
+				        </ul>
+				      </div>
+			  </div>
+			</div>
+	</header>
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
